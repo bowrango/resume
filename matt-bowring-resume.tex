@@ -4,17 +4,19 @@
 
 \usepackage[scale=0.915]{geometry}
 \usepackage{enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 
 \setlist[itemize]{
   label=\textbullet,
-  leftmargin=0.5cm,
+  leftmargin=0.45cm,
   itemsep=0cm,  
   parsep=0cm,
   topsep=0cm,
 }
 
 \newcommand{\role}[4]{
-  \vspace{-0.1cm}
+  \vspace{-0.2cm}
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
       {\bfseries#3} & #2 \\ #1 & #4
     \end{tabular*}
@@ -42,7 +44,7 @@
 \vspace{-1.5cm}
 \begin{center}
     \href{mailto:mbowring@purdue.edu}{\texttt{mbowring@purdue.edu}} $|$ Cambridge, MA \\
-    {\href{https://www.mattbowring.com}{\color{blue}  Website}} $|$
+    {\href{https://www.mattbowring.com}{\color{blue} Website}} $|$
     {\href{https://github.com/bowrango}{\color{blue} Github}} $|$
     \href{https://www.linkedin.com/in/matt-bowring-463610149/}{\color{blue} LinkedIn} 
 \end{center}
@@ -51,19 +53,38 @@
 \section{Experience}
 
 \role{Software Engineer (Math/PDE)}{May 2022 - Present}{The MathWorks}{Natick, MA (on-site)}
-\tools{MATLAB, C++, Python, CMake, OpenMP, CUDA, Git, Linux/Windows OS}
+\tools{MATLAB, C++, Python, CMake, OpenMP, Git}
 
 {\begin{itemize}
-\item Lead development of the {{\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}}}; Design the core object-oriented framework that enables quantum programming natively in MATLAB; Develop numerical algorithms to simulate/compile/optimize gate-based quantum circuits, generate assembly code, and compute expected values of observables; Build client-side REST infrastructure using AWS and IBM cloud services to manage async jobs on quantum hardware; Write all unit/functional/performance tests, integrate/benchmark third-party quantum software, and manage CI/CD; Grew the library from an unreleased prototype to 9,100+ users.
-\item Consult industry users with machine learning and quantum computing applications; Developed a quantum neural network for image classification ({{\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE publication}}}) and researched methods to encode hard/soft optimization constraints; Featured at industy conferences (IBM QDC 2022-2025, AWS re: Invent 2025).
+\item Lead development of the {{\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}}} from an unreleased prototype to 9,100+ users
+
+\begin{itemize}[label=-]
+\item Design object-oriented MATLAB framework that enables quantum programming on Windows, Linux, and Mac
+\item Develop templated C++ state-vector simulator for CPU/GPU with multi-threading using OpenMP
+\item Build graph compiler/transpiler using C++ to generate optimized assembly code for quantum circuits
+\item Build client-side REST infrastructure for AWS and IBM cloud services to manage async jobs on quantum hardware
+\item Develop sparse algorithms to compute expectation values of observables and decompose arbitrary unitary matrices
+\item Manage CI/CD, write all unit/functional/performance tests, and benchmark against other quantum libraries 
+\end{itemize}
+
+\item Consult industry users on machine learning and quantum computing applications
+
+\begin{itemize}[label=-]
+\item Implemented quantum neural networks for image classification ({{\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE publication}}}) and reinforcement learning
+\item Researched constraint encodings using quadratization and penalty dephasing to benchmark optimization heuristics
+\item Developed presentations and examples for industry conferences (IBM QDC 22-25, AWS re: Invent 25)
+\end{itemize}
+
 \end{itemize}}
 
+\vspace{0.2cm}
+
 \role{Software Engineer}{May 2021 - May 2022}{The MathWorks}{Natick, MA (on-site)}
-\tools{MATLAB, C++, Python, Git, Linux/Windows OS}
+\tools{MATLAB, C++, Python, Git}
 
 {\begin{itemize}
-\item Trained a recurrent graph network on the QM7-X molecular dataset to predict equilibrium energy and classify optimal configurations; Developed a format-agnostic data pipeline to encode atomic properties using OpenBabel.
-\item Developed a REST interface to cloud-based quantum annealing hardware; Evaluated binary optimization problems with hard/soft constraints to benchmark minor-embedding algorithms; Wrote parallel simulations to compute the energy spectrum of a graph-theoretic qubit coupled to external fields.
+\item Trained recurrent graph network on QM7-X molecular dataset to predict equilibrium energy and classify optimal configurations; Developed format-agnostic data pipeline to encode atomic properties using OpenBabel
+\item Developed REST interface to cloud-based quantum annealing hardware; Evaluated binary optimization problems with hard/soft constraints to benchmark minor-embedding algorithms; Wrote parallel simulations to compute qubit transition probabilities for truncated Hamiltonian based on graph-theoretic formalism across coupling strength and energy separation parameters 
 \end{itemize}}
 
 \vspace{-0.5cm}
@@ -73,9 +94,14 @@
 \role{M.S. Mechanical Engineering}{Jan. 2025 - Present}{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
 
 {\begin{itemize}
-% \item Research interest surround physics-based optimization (\href{https://gigabug.org/posts/bug8/}{\color{blue} preprint}).
-\item Fabricated a mixed-signal PCB to solve combinatorial optimization problems using phase dynamics of coupled oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint}); Developed Lyapunov stability models using LTspice and MATLAB; Designed schematics and layouts in Altium Designer; Wrote MATLAB interfaces to my test instruments for signal processing and verification; Developed real-time embedded C++ firmware using SPI and FreeRTOS; Accepted for research mentorship under Stephen Wolfram.
-\item Judged the annual hackathon at MIT; Attended the Hot Chips conference at Stanford.
+\item Fabricated mixed-signal PCB to solve combinatorial problems using phase dynamics of LC oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint}); Accepted for research mentorship under Stephen Wolfram
+
+\begin{itemize}[label=-]
+\item Developed simulations of coupled oscillators in LTspice and modeled noisy phase dynamics using MATLAB
+\item Developed real-time embedded C++ firmware using SPI and FreeRTOS to measure phases at 1MHz
+\item Designed schematics and layouts for two multi-layer boards in Altium Designer
+\item Soldered components and wrote MATLAB interfaces to test instruments for signal processing and Fourier analysis
+\end{itemize}
 \end{itemize}}
 
 \vspace{0.2cm}
@@ -83,32 +109,27 @@
 \role{B.S. Mechanical Engineering}{Aug. 2017 - May 2021}{The University of New Hampshire (3.9 GPA)}{Durham, NH (on-site)}
 
 {\begin{itemize}
-\item Awarded over \$100,000 in scholarships for developing an autonomous quadcopter. \item Lead the Quadcopter Engineering Team;  
-Selected for Makerspace Administrator, Academic Tutor and Mentor.
+\item Awarded over \$100,000 in scholarships for developing an autonomous quadcopter
+\item Led the Quadcopter Engineering Team; Served as Makerspace Administrator, Academic Tutor and Mentor
 \end{itemize}}
 
 \vspace{-0.5cm}
 
 \section{Projects}
 
-\project{Computer Systems}{2024 ‐ Present}
+\project{Computer Systems}{2024 - Present}
 {\begin{itemize}
-      \item Built a custom multi-GPU Linux machine for PyTorch/CUDA research experiments; Configured a Beelink home server using NixOS and Tailscale.
+\item Built custom multi-GPU Linux machine for PyTorch/CUDA research experiments; Configured Beelink home server using NixOS and Tailscale
 \end{itemize}} 
 
-\project{Machine Learning}{2020 ‐ Present}
+\project{Machine Learning}{2020 - Present}
 {\begin{itemize}
-      \item Wrote a packet parser to process and analyze financial data using Python and Wireshark; Trained a recurrent network to predict dash-camera misalignment using OpenCV and PyTorch; Built a data pipeline and Bayesian network to predict trends for an online video game using NetworkX and PyTorch.
+\item Wrote packet parser to process and analyze financial data using Python and Wireshark; Trained recurrent network to predict dash-camera misalignment using OpenCV and PyTorch; Built data pipeline and Bayesian network to predict trends for online video game using NetworkX and PyTorch
 \end{itemize}} 
 
-\project{Robotics}{2019 ‐ 2021}
+\project{Robotics}{2019 - 2021}
 {\begin{itemize}
-      \item Integrated the PX4 flight-stack with a Raspberry Pi to enable waypoint tracking for quadcopters; Implemented ROS/MAVROS communication, telemetry, and interfaced Gazebo for SITL simulation with Python; Tuned the flight controller and analyzed motor responses using MATLAB; 3D-printed the frame, soldered electrical components, and conducted field tests.
-\end{itemize}} 
-
-\project{Mechanical Design}{2020 ‐ 2021}
-{\begin{itemize}
-      \item Lead a student team to develop an air intake for a mock jet turbine; Developed CAD models using SolidWorks, ran CFD simulations with Ansys, and 3D-printed airfoils; Experimented with aluminum casting using a custom silicon mold and vacuum chamber. \href{https://www.gla.ac.uk/myglasgow/news/peopleprojects/2017mar-apr/headline_522468_en.html}{\color{blue} Collaborated with the University of Glasgow}.
+\item Integrated PX4 flight-stack with Raspberry Pi to enable waypoint tracking for quadcopters; Implemented ROS/MAVROS communication, telemetry, and interfaced Gazebo for SITL simulation with Python; Tuned flight controller and analyzed motor responses using MATLAB; 3D-printed frame, soldered electrical components, and conducted field tests to evaluate controller performance
 \end{itemize}} 
 
 \end{document}
