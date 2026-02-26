@@ -60,7 +60,7 @@
 
 \begin{itemize}[label=-]
 \item Designed object-oriented MATLAB framework to enable quantum programming across Windows, Linux, and Mac
-\item Developed templated C++ state-vector simulator for CPU/GPU with multi-threading using OpenMP
+\item Developed templated C++ state-vector simulator for CPU/GPU with OpenMP multi-threading
 \item Implemented graph-based C++ compiler/transpiler to generate optimized gate-level assembly code
 \item Built client-side REST infrastructure to manage async hardware jobs using AWS and IBM cloud services
 \item Developed sparse algorithms for estimation of Pauli observables, error mitigation, and gate decomposition
@@ -71,7 +71,7 @@
 
 \begin{itemize}[label=-]
 \item Implemented quantum neural networks for image classification ({{\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE publication}}}) and reinforcement learning
-\item Researched constraint-aware encoding techniques for quantum heuristics using penalty dephasing and quadratization
+\item Researched constraint-aware quantum optimization methods based on Pauli correlation encoding, quadratization, and penalty dephasing
 \item Developed presentations and examples for industry conferences (ACS 25, AWS re: Invent 25, IBM QDC 22-25)
 \end{itemize}
 
@@ -84,23 +84,23 @@
 
 {\begin{itemize}
 \item Trained recurrent graph network on QM7-X molecular dataset to predict equilibrium energy and classify optimal configurations; Developed format-agnostic data pipeline to encode atomic properties using OpenBabel
-\item Developed REST interface to cloud-based quantum annealing hardware; Benchmarked minor-embedding heuristics on constrained combinatorial problems; Wrote parallel simulations to compute qubit transition probabilities for truncated Hamiltonian based on graph-theoretic formalism across coupling strength and energy separation parameters 
+\item Developed REST interface to cloud-based quantum annealing hardware; Benchmarked minor-embedding heuristics on constrained combinatorial problems; Wrote parallel simulations to compute qubit transition probabilities for truncated graph Hamiltonian across coupling strength and energy separation parameters 
 \end{itemize}}
 
 \vspace{-0.5cm}
 
 \section{Education}
 
-\role{M.S. Mechanical Engineering}{Jan. 2025 - Present}{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
+\role{M.S. Electrical/Computer Engineering}{Jan. 2025 - Present}{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
 
 {\begin{itemize}
-\item Fabricated mixed-signal PCB to solve combinatorial problems using phase dynamics of LC oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint}); Accepted for research mentorship under Stephen Wolfram
+\item Fabricated mixed-signal PCB to solve combinatorial problems using phase dynamics of LC oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint});
 
 \begin{itemize}[label=-]
 \item Developed simulations of coupled oscillators in LTspice and modeled noisy phase dynamics with MATLAB
 \item Designed schematics and layouts for two multi-layer boards in Altium Designer and soldered components
 \item Developed real-time embedded C++ firmware using SPI and FreeRTOS to measure phases at 1MHz
-\item Automated test instrument control to inject perturbations and analyze Fourier spectrum using MATLAB 
+\item Automated test instruments with MATLAB to control perturbations and analyze Fourier spectrum
 \end{itemize}
 \end{itemize}}
 
@@ -110,7 +110,7 @@
 
 {\begin{itemize}
 \item Awarded over \$100,000 in scholarships for developing an autonomous quadcopter
-\item Led the Quadcopter Engineering Team; Served as Makerspace Administrator, Academic Tutor and Mentor
+\item Led the Quadcopter Engineering Team; Volunteered as Makerspace Administrator, Academic Tutor and Mentor
 \end{itemize}}
 
 \vspace{-0.5cm}
@@ -119,17 +119,19 @@
 
 \project{Computer Systems}{2024 - Present}
 {\begin{itemize}
-\item Built custom multi-GPU Linux machine for PyTorch/CUDA research experiments; Configured Beelink home server using NixOS and Tailscale
+\item Operate custom multi-GPU Linux machine to accelerate research experiments; Familiar with dataflow architectures and SIMD parallelism; Broad interest in programming language semantics                          
 \end{itemize}} 
 
 \project{Machine Learning}{2020 - Present}
+\tools{PyTorch/CUDA, NetworkX, OpenCV}
 {\begin{itemize}
-\item Wrote packet parser to process and analyze financial data using Python and Wireshark; Trained recurrent convolutional network to predict dash-camera misalignment using OpenCV and PyTorch; Built data pipeline and Bayesian network to predict trends for online video game using NetworkX and PyTorch
+\item Develop various research experiments: analyzed "edge-of-chaos" regions for randomly initialized Transformers; implemented non-reversible Langevin MCMC for discrete/relaxed optimization; Wrote packet parser to process financial data using Wireshark; Trained CNN/RNN to predict dash-camera misalignment; Built data pipeline and Bayesian network to predict trends for online video game.
 \end{itemize}} 
 
-\project{Robotics}{2019 - 2021}
-{\begin{itemize}
-\item Integrated PX4 flight-stack with Raspberry Pi to enable waypoint tracking for quadcopters; Implemented ROS/MAVROS communication, telemetry, and interfaced Gazebo for SITL simulation with Python; Tuned flight controller and analyzed motor responses using MATLAB; 3D-printed frame, soldered electrical components, and conducted field tests to evaluate controller performance
-\end{itemize}} 
+% \project{Robotics}{2019 - 2021}
+% \tools{MATLAB, Python}
+% {\begin{itemize}
+% \item Integrated PX4 flight-stack with Raspberry Pi to enable waypoint tracking for quadcopters; Implemented ROS/MAVROS communication, telemetry, and interfaced Gazebo for SITL simulation; Tuned flight controller and analyzed motor responses; 3D-printed frame, soldered electrical components, and conducted field tests to evaluate controller performance
+% \end{itemize}} 
 
 \end{document}
