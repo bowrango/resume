@@ -68,18 +68,18 @@
 
 \begin{itemize}[label=-]
 \item Designed object-oriented MATLAB framework to enable quantum programming across Windows, Linux, and Mac
+\item Developed graph-based C++ compiler to generate optimized gate-level assembly code targeting hardware backends
 \item Developed templated C++ state-vector simulator for CPU/GPU with OpenMP multi-threading
-\item Implemented graph-based C++ compiler/transpiler to generate optimized gate-level assembly code
 \item Built client-side REST infrastructure to manage async hardware jobs using AWS and IBM cloud services
-\item Developed sparse algorithms for estimation of Pauli observables, error mitigation, and gate decomposition
-\item Manage CI/CD, write all unit/functional/performance tests, and benchmark against other quantum libraries 
+\item Implemented sparse algorithms for estimation of Pauli observables, error mitigation, and gate decomposition
+\item Manage CI/CD, write all unit/functional/performance tests, and analyze benchmarks against other quantum libraries 
 \end{itemize}
 
 \item Consult industry users on machine learning and quantum computing applications
 
 \begin{itemize}[label=-]
 \item Implemented quantum neural networks for image classification ({{\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE publication}}}) and reinforcement learning
-\item Researched constraint-aware quantum optimization methods based on Pauli correlation encoding, quadratization, and penalty dephasing
+\item Researched quantum optimization methods using Pauli correlation encoding, quadratization, and penalty dephasing
 \item Developed presentations and examples for industry conferences (ACS 25, AWS re: Invent 25, IBM QDC 22-25)
 \end{itemize}
 
@@ -91,8 +91,9 @@
 \tools{MATLAB, C++, Python, Git}
 
 {\begin{itemize}
-\item Trained GNN on QM7-X molecular dataset to predict and classify equilibrium configurations; Developed format-agnostic data pipeline using OpenBabel to encode molecular properties
-\item Developed REST interface to cloud-based quantum annealing hardware; Benchmarked minor-embedding heuristics on constrained combinatorial problems; Wrote parallel simulations to compute qubit transition probabilities for truncated graph Hamiltonian across coupling strength and energy separation parameters 
+\item Trained GNN on QM7-X dataset to predict equilibrium energy using custom pipeline to encode molecular properties
+\item Developed REST interface to cloud-based quantum annealing hardware and benchmarked minor-embedding heuristics
+\item Wrote parallel simulations to compute qubit transition probabilities for truncated graph Hamiltonian across coupling strength and energy separation parameters 
 \end{itemize}}
 
 \vspace{-0.5cm}
@@ -133,7 +134,8 @@
 \project{Machine Learning}{2020 - Present}
 \tools{PyTorch/CUDA, NetworkX, OpenCV}
 {\begin{itemize}
-\item Develop various research experiments: analyzed edge-of-chaos regions for randomly initialized Transformers; implemented non-reversible Langevin MCMC for discrete/relaxed optimization; Wrote packet parser to process financial data using Wireshark; Trained CNN/RNN to predict dash-camera misalignment; Built data pipeline and Bayesian network to predict trends for online video game
+\item Implemented greedy algorithms to schedule and place tensors on mock dataflow architecture to minimize data movement
+\item Develop various research experiments: analyzed edge-of-chaos regions for randomly initialized Transformers; implemented non-reversible Langevin MCMC for discrete/relaxed optimization; Evaluated performance of various GD optimizers; Wrote packet parser to process and analyze financial data; Trained CNN/RNN to predict dash-camera misalignment; Built data pipeline and Bayesian network to predict trends for online video game
 \end{itemize}} 
 
 % \project{Robotics}{2019 - 2021}
