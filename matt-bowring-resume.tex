@@ -67,15 +67,15 @@
 \item Lead development of the {{\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}}} (unreleased prototype to 9,300+ users)
 
 \begin{itemize}[label=-]
-\item Designed object-oriented MATLAB framework to enable quantum programming across Windows, Linux, and Mac
-\item Developed graph-based C++ compiler to generate optimized gate-level assembly code targeting hardware backends
-\item Developed templated C++ state-vector simulator for CPU/GPU with OpenMP multi-threading
-\item Built client-side REST infrastructure to manage async hardware jobs using AWS and IBM cloud services
-\item Implemented sparse algorithms for estimation of Pauli observables, error mitigation, and gate decomposition
+\item Design object-oriented MATLAB framework to enable quantum programming across Windows, Linux, and Mac
+\item Develop templated C++ state-vector simulator for CPU/GPU with OpenMP multi-threading
+\item Develop graph-based C++ compiler to generate optimized gate-level assembly code targeting hardware backends
+\item Build client-side REST infrastructure using APIs from AWS and IBM to support batched job execution
+\item Implement sparse algorithms for estimation of Pauli observables, error mitigation, and gate decomposition
 \item Manage CI/CD, write all unit/functional/performance tests, and analyze benchmarks against other quantum libraries 
 \end{itemize}
 
-\item Consult industry users on machine learning and quantum computing applications
+\item Consulted industry users on machine learning and quantum computing applications
 
 \begin{itemize}[label=-]
 \item Implemented quantum neural networks for image classification ({{\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE publication}}}) and reinforcement learning
@@ -100,7 +100,7 @@
 
 \section{Education}
 
-\role{M.S. Electrical/Computer Engineering}{Jan. 2025 - Present}{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
+\role{M.S. Electrical/Computer Engineering}{Jan. 2025 - Jan. 2028}{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
 
 {\begin{itemize}
 \item Fabricated mixed-signal PCB to solve combinatorial problems using phase dynamics of LC oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint})
@@ -118,7 +118,7 @@
 \role{B.S. Mechanical Engineering}{Aug. 2017 - May 2021}{The University of New Hampshire (3.9 GPA)}{Durham, NH (on-site)}
 
 {\begin{itemize}
-\item Awarded over \$100,000 in scholarships for developing an autonomous quadcopter
+\item Awarded over \$100,000 in merit-based academic scholarships for developing an autonomous quadcopter
 \item Led the Quadcopter Engineering Team; Volunteered as Makerspace Administrator, Academic Tutor and Mentor
 \end{itemize}}
 
@@ -135,8 +135,10 @@
 \tools{PyTorch/CUDA, NetworkX, OpenCV}
 {\begin{itemize}
 \item Implemented greedy algorithms to schedule and place tensors on mock dataflow architecture to minimize data movement
-\item Develop various research experiments: analyzed edge-of-chaos regions for randomly initialized Transformers; implemented non-reversible Langevin MCMC for discrete/relaxed optimization; Evaluated performance of various GD optimizers; Wrote packet parser to process and analyze financial data; Trained CNN/RNN to predict dash-camera misalignment; Built data pipeline and Bayesian network to predict trends for online video game
-\end{itemize}} 
+\item Reproduced edge-of-chaos Lyapunov analysis in randomly initialized Transformers to explore trainability and heavy-tailed self-regularization
+\item Implemented Langevin MCMC with skew-symmetric drift and heavy-tailed noise to study accelerated convergence in  combinatorial optimization.
+\item Trained CNN/RNN on driving footage to predict dash-camera frame misalignment by tracking vanishing points
+\end{itemize}}
 
 % \project{Robotics}{2019 - 2021}
 % \tools{MATLAB, Python}
