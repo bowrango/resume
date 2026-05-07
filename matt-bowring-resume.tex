@@ -64,15 +64,15 @@
 \tools{MATLAB, C++, Python, OpenMP, CMake, Git}
 
 {\begin{itemize}
-\item Lead development of the {{\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}}} (unreleased prototype to 9,500+ users)
+\item Lead development of the {{\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}}} (from unreleased prototype to 10k+ users)
 
 \begin{itemize}[label=-]
-\item Design object-oriented MATLAB framework to enable quantum programming across Windows, Linux, and Mac
-\item Develop graph-based C++ compiler for IR optimization and hardware-specific assembly generation
-\item Develop templated C++ state-vector simulator with CPU multi-threading and GPU offloading
-\item Build client-side REST infrastructure using APIs from AWS/IBM to manage batched/sequential hardware jobs
-\item Implement numerical methods for Pauli observable estimation, measurement error mitigation, and gate decomposition
-\item Manage CI/CD, write all unit/functional/performance tests, and run benchmarks against other quantum libraries 
+\item Design core object-oriented frameworks for modeling, simulating, and running quantum circuits
+\item Develop C++ graph-based compiler for IR optimization and hardware-specific assembly code generation
+\item Develop templated C++ simulation kernels with support for CPU multi-threading and GPU offloading
+\item Build client-side REST infrastructure using APIs from AWS/IBM to run batched/sequential hardware jobs
+\item Implement numerical methods for observable expectations, error mitigation, and gate decomposition
+\item Manage CI/CD, write all unit/functional/performance tests, and plan new features
 \end{itemize}
 
 \item Consulted industry users on machine learning and quantum computing applications
@@ -100,14 +100,14 @@
 
 \section{Education}
 
-\role{M.S. Mechanical Engineering}{Jan. 2025 - Jan. 2028}{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
+\role{M.S. Electrical and Computing Engineering}{Expected May 2027}{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
 
 {\begin{itemize}
 \item Fabricated mixed-signal PCB to solve combinatorial problems using phase dynamics of LC oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint})
 
 \begin{itemize}[label=-]
-\item Developed LTspice simulations of oscillator synchronization and modeled noisy dynamics with MATLAB
-\item Designed schematics and layouts for two multi-layer boards in Altium Designer and soldered components
+\item Developed LTspice and MATLAB simulations to model bifurcation dynamics under noisy perturbations
+\item Designed schematics and layouts in Altium Designer for two multi-layer boards
 \item Developed real-time embedded C++ firmware using SPI and FreeRTOS for phase readout at 1MHz
 \item Automated test instruments with MATLAB to control perturbations and analyze Fourier spectrum
 \end{itemize}
@@ -115,7 +115,7 @@
 
 \vspace{0.2cm}
 
-\role{B.S. Mechanical Engineering}{Aug. 2017 - May 2021}{The University of New Hampshire (3.9 GPA)}{Durham, NH (on-site)}
+\role{B.S. Mechanical Engineering}{May 2021}{The University of New Hampshire (3.9 GPA)}{Durham, NH (on-site)}
 
 {\begin{itemize}
 \item Awarded over \$100,000 in merit-based academic scholarships for developing an autonomous quadcopter
@@ -128,22 +128,22 @@
 
 \project{Computer Systems}{2024 - Present}
 {\begin{itemize}
-\item Operate custom multi-GPU Linux machine to accelerate research experiments; Familiar with CPU/GPU/FPGA architectures, kernels, and SIMD parallelism; Broad interest in programming language semantics                          
+\item Operate custom home server with multi-GPU cluster for research experiments; Familar with CPU/GPU/FPGA and unconventional architectures; Broad interest in programming language semantics                          
 \end{itemize}} 
 
 \project{Machine Learning}{2020 - Present}
-\tools{PyTorch/CUDA, NetworkX, OpenCV}
+\tools{PyTorch/CUDA, \texttt{optuna}, NetworkX, OpenCV}
 {\begin{itemize}
-\item Wrote greedy algorithms to schedule and place tensors on mock dataflow architecture to minimize data movement
-\item Estimated Lyapunov exponents of token dynamics in randomly initialized Transformers to characterize edge-of-chaos trainability 
-\item Implemented Langevin MCMC with skew-symmetric drift and heavy-tailed noise to accelerate convergence of combinatorial problems.
-\item Trained CNN/RNN to predict dash-camera frame misalignment via vanishing point tracking
+\item Research physics-inspired methods using annealing and heavy-tailed sampling to accelerate combinatorial optimization
+\item Improved VLSI placement methods using Bayesian optimization and custom legalization passes
+\item Approximated Lyapunov exponents of Transformer token dynamics to study initialization near edge-of-chaos 
+\item Trained CNN/RNN to predict frame misalignment of dash-camera using vanishing point tracking
 \end{itemize}}
 
-% \project{Robotics}{2019 - 2021}
-% \tools{MATLAB, Python}
-% {\begin{itemize}
-% \item Integrated PX4 flight-stack with Raspberry Pi to enable waypoint tracking for quadcopters; Implemented ROS/MAVROS communication, telemetry, and interfaced Gazebo for SITL simulation; Tuned flight controller and analyzed motor responses; 3D-printed frame, soldered electrical components, and conducted field tests to evaluate controller performance
-% \end{itemize}} 
+\project{Robotics}{2019 - 2021}
+\tools{MATLAB, Python}
+{\begin{itemize}
+\item Deployed PX4 flight-stack onto microcontroller for waypoint tracking, ROS/MAVROS communication, and telemetry
+\end{itemize}} 
 
 \end{document}
