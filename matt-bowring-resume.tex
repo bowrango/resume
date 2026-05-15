@@ -7,20 +7,34 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
-\setlist[itemize]{
-  label=\textbullet,
-  leftmargin=0.45cm,
-  itemsep=0cm,  
+\setlist[itemize,1]{
+  label={},
+  leftmargin=0cm,
+  itemsep=0cm,
+  parsep=0cm,
+  topsep=0cm,
+}
+\setlist[itemize,2]{
+  label=-,
+  leftmargin=0.3cm,
+  itemsep=0cm,
   parsep=0cm,
   topsep=0cm,
 }
 
-\newcommand{\role}[4]{
+\newcommand{\company}[2]{
   \vspace{-0.2cm}
     \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      {\bfseries#3} & #2 \\ #1 & #4
+      {\bfseries#1} & #2
     \end{tabular*}
-    \vspace{-0.2cm}
+    \vspace{-0.5cm}
+}
+
+\newcommand{\role}[2]{
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{#1} & #2
+    \end{tabular*}
+    \vspace{-0.5cm}
 }
 
 \newcommand{\project}[2]{
@@ -43,7 +57,7 @@
 
 \vspace{-1.5cm}
 \begin{center}
-    \href{mailto:mbowring@purdue.edu}{\texttt{mbowring@purdue.edu}} $|$ Cambridge, MA \\
+    \href{mailto:matt@mattbowring.com}{\texttt{matt@mattbowring.com}} $|$ Cambridge, MA \\
     {\href{https://www.mattbowring.com}{\color{blue} Website}} $|$
     {\href{https://github.com/bowrango}{\color{blue} GitHub}} $|$
     \href{https://www.linkedin.com/in/matt-bowring-463610149/}{\color{blue} LinkedIn} 
@@ -52,62 +66,62 @@
 
 \section{Experience}
 
-% \role{Software Engineer}{Jan. 2026 - Present}{Taconic Trading LLC}{New York City, NY (remote)}
-% \tools{C++, Python, CMake, Git}
-% \begin{itemize}
-% \item Develop infrastructure for real-time financial data to enable low-latency automated trading
-% \end{itemize}
-
 % \vspace{0.2cm}
 
-\role{Software Engineer (Math/PDE)}{May 2022 - Present}{The MathWorks}{Natick, MA (on-site)}
-\tools{MATLAB, C++, Python, OpenMP, CMake, Git}
+\company{MathWorks}{Natick, MA (on-site)}
+
+\role{Software Engineer, Quantum Computing}{May 2023 - Present}
 
 {\begin{itemize}
-\item Lead development of the {{\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}}} (from unreleased prototype to 10k+ users)
+\item Lead development of the {{\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}}}, 10k+ users, available on Windows,Linux, and Mac
 
 \begin{itemize}[label=-]
-\item Design core object-oriented frameworks for modeling, simulating, and running quantum circuits
-\item Develop C++ graph-based compiler for IR optimization and hardware-specific assembly code generation
-\item Develop templated C++ simulation kernels with support for CPU multi-threading and GPU offloading
-\item Build client-side REST infrastructure using APIs from AWS/IBM to run batched/sequential hardware jobs
-\item Implement numerical methods for observable expectations, error mitigation, and gate decomposition
-\item Manage CI/CD, write all unit/functional/performance tests, and plan new features
+\item Designed core object-oriented MATLAB framework for modeling, simulating, and running quantum algorithms
+\item Developed templated C++ state-vector simulation kernels for CPU/GPU, delivering 30-100x speedup
+\item Integrated C++ compiler for place/route graph optimization and hardware-specific assembly code generation
+\item Built client-side MATLAB infrastructure on AWS/IBM REST APIs to enable 300k+ user-submitted quantum circuits
+\item Wrote numerical methods to estimate Pauli observables, synthesize quantum gates, and mitigate measurement errors
+\item Owned 50k+ line codebase from prototype to production, spanning CI/CD, test infrastructure, and roadmap planning
 \end{itemize}
 
-\item Consulted industry users on machine learning and quantum computing applications
+\item Consulted industry with quantum computing applications, with results presented at ACS, AWS re:Invent, and IBM QDC
 
 \begin{itemize}[label=-]
 \item Implemented quantum neural networks for image classification ({{\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE publication}}}) and reinforcement learning
-\item Researched quantum optimization methods using Pauli correlation encoding, quadratization, and penalty dephasing
-\item Developed presentations and examples for industry conferences (ACS 25, AWS re: Invent 25, IBM QDC 22-25)
+\item Researched constrained optimization methods using Pauli correlation encoding, quadratization, and penalty dephasing
 \end{itemize}
 
 \end{itemize}}
 
 \vspace{0.2cm}
 
-\role{Software Engineer}{May 2021 - May 2022}{The MathWorks}{Natick, MA (on-site)}
-\tools{MATLAB, C++, Python, OpenMP, CMake, Git}
+\role{Senior Associate Software Engineer}{May 2022 - May 2023}
 
-{\begin{itemize}
-\item Trained GNN on QM7-X dataset to predict equilibrium energy using custom pipeline to encode molecular properties
-\item Developed REST interface to cloud-based quantum annealing hardware and benchmarked minor-embedding heuristics
+{\begin{itemize}[label=-]
+\item Trained GNN on QM7-X dataset to predict equilibrium energy with XX\% accuracy using temporal embeddings
+\item Implemented graph-based methods to construct Hamiltonians for coarse-grained protein models and measured ground states on quantum annealing hardware with XX\% accuracy.
 \item Wrote parallel simulations to compute qubit transition probabilities for truncated graph Hamiltonian across coupling strength and energy separation parameters 
+\end{itemize}}
+
+\role{Associate Software Engineer}{May 2021 - May 2022}
+{\begin{itemize}[label=-]
+\item Resolved 250+ bug reports across core MATLAB control systems and mathematics function libraries
 \end{itemize}}
 
 \vspace{-0.5cm}
 
 \section{Education}
 
-\role{M.S. Electrical and Computing Engineering}{Expected May 2027}{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
+\company{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
+
+\role{M.S. Electrical and Computing Engineering}{Expected May 2027}
 
 {\begin{itemize}
 \item Fabricated mixed-signal PCB to solve combinatorial problems using phase dynamics of LC oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint})
 
 \begin{itemize}[label=-]
 \item Developed LTspice and MATLAB simulations to model bifurcation dynamics under noisy perturbations
-\item Designed schematics and layouts in Altium Designer for two multi-layer boards
+\item Designed schematics and layouts in Altium Designer for two multi-layer
 \item Developed real-time embedded C++ firmware using SPI and FreeRTOS for phase readout at 1MHz
 \item Automated test instruments with MATLAB to control perturbations and analyze Fourier spectrum
 \end{itemize}
@@ -115,7 +129,9 @@
 
 \vspace{0.2cm}
 
-\role{B.S. Mechanical Engineering}{May 2021}{The University of New Hampshire (3.9 GPA)}{Durham, NH (on-site)}
+\company{The University of New Hampshire (3.9 GPA)}{Durham, NH (on-site)}
+
+\role{B.S. Mechanical Engineering}{May 2021}
 
 {\begin{itemize}
 \item Awarded over \$100,000 in merit-based academic scholarships for developing an autonomous quadcopter
@@ -126,24 +142,21 @@
 
 \section{Projects}
 
-\project{Computer Systems}{2024 - Present}
+\project{Compute Node}{2024 - Present}
 {\begin{itemize}
-\item Operate custom home server with multi-GPU cluster for research experiments; Familar with CPU/GPU/FPGA and unconventional architectures; Broad interest in programming language semantics                          
+\item Built custom multi-GPU accelerator with remote access for research experiments; Familar with CPU/GPU/FPGA and unconventional architectures; Broad interest in programming language semantics                          
 \end{itemize}} 
 
-\project{Machine Learning}{2020 - Present}
-\tools{PyTorch/CUDA, \texttt{optuna}, NetworkX, OpenCV}
+\project{Machine Learning}{Present}
+\tools{PyTorch/CUDA, NetworkX, OpenCV}
 {\begin{itemize}
 \item Research physics-inspired methods using annealing and heavy-tailed sampling to accelerate combinatorial optimization
 \item Improved VLSI placement methods using Bayesian optimization and custom legalization passes
-\item Approximated Lyapunov exponents of Transformer token dynamics to study initialization near edge-of-chaos 
-\item Trained CNN/RNN to predict frame misalignment of dash-camera using vanishing point tracking
 \end{itemize}}
 
-\project{Robotics}{2019 - 2021}
-\tools{MATLAB, Python}
-{\begin{itemize}
-\item Deployed PX4 flight-stack onto microcontroller for waypoint tracking, ROS/MAVROS communication, and telemetry
-\end{itemize}} 
+\section{Skills}
+
+\textbf{Programming Languages:} MATLAB, C++, Python (PyTorch/CUDA, NetworkX, OpTuna, OpenCV)\\
+\textbf{Software:} OpenMP, CMake, GoogleTests, Shell Scripting, , Git, Perforce, Microsoft Suite
 
 \end{document}
