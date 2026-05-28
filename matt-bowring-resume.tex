@@ -2,162 +2,134 @@
 \moderncvstyle{banking}
 \moderncvcolor{black}
 
-\usepackage[scale=0.915]{geometry}
+\usepackage[left=1cm,right=1cm,top=0.6cm,bottom=0.6cm]{geometry}
 \usepackage{enumitem}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
+\setlength{\parindent}{0pt}
+
+% Single knob for vertical rhythm between entries. Tune this and every gap scales together.
+\newlength{\entrygap}
+\setlength{\entrygap}{-0.1cm}
+
 \setlist[itemize,1]{
-  label={},
-  leftmargin=0cm,
-  itemsep=0cm,
-  parsep=0cm,
-  topsep=0cm,
+  label=$\bullet$,
+  leftmargin=0.4cm,
+  itemsep=0pt,
+  parsep=0pt,
+  topsep=0pt,
 }
 \setlist[itemize,2]{
   label=-,
-  leftmargin=0.3cm,
-  itemsep=0cm,
-  parsep=0cm,
-  topsep=0cm,
+  leftmargin=0.2cm,
+  itemsep=0pt,
+  parsep=0pt,
+  topsep=0pt,
 }
 
-\newcommand{\company}[2]{
-  \vspace{-0.2cm}
-    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      {\bfseries#1} & #2
-    \end{tabular*}
-    \vspace{-0.5cm}
+% Header for a new employer / institution / project block. Adds a small gap above
+% so it visually separates from the preceding itemize, role, or section header.
+\newcommand{\company}[2]{%
+  \par\addvspace{\entrygap}%
+  \noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}%
+    \textbf{#1} & #2
+  \end{tabular*}\par
 }
 
-\newcommand{\role}[2]{
-    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textit{#1} & #2
-    \end{tabular*}
-    \vspace{-0.5cm}
+% Role line. Sits tight under the company header or a previous role -- no extra gap.
+\newcommand{\role}[2]{%
+  \par\noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}%
+    \textit{#1} & #2
+  \end{tabular*}\par
 }
 
-\newcommand{\project}[2]{
-  \vspace{0cm}
-    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2
-    \end{tabular*}
-    \vspace{-0.5cm}
-}
-
-\newcommand{\tools}[1]{
-    \par #1
+\newcommand{\project}[2]{%
+  \par\addvspace{\entrygap}%
+  \noindent\begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}r@{}}%
+    \textbf{#1} & #2
+  \end{tabular*}\par
 }
 
 \name{Matt}{Bowring}
 
 \begin{document}
 
-\makecvtitle
-
-\vspace{-1.5cm}
 \begin{center}
+    {\Huge\bfseries Matt Bowring}\\
     \href{mailto:matt@mattbowring.com}{\texttt{matt@mattbowring.com}} $|$ Cambridge, MA \\
-    {\href{https://www.mattbowring.com}{\color{blue} Website}} $|$
-    {\href{https://github.com/bowrango}{\color{blue} GitHub}} $|$
-    \href{https://www.linkedin.com/in/matt-bowring-463610149/}{\color{blue} LinkedIn} 
+    \href{https://www.mattbowring.com}{\color{blue} Website} $|$
+    \href{https://github.com/bowrango}{\color{blue} GitHub} $|$
+    \href{https://www.linkedin.com/in/matt-bowring-463610149/}{\color{blue} LinkedIn}
 \end{center}
-\vspace{-1cm}
 
 \section{Experience}
 
-% \vspace{0.2cm}
-
 \company{MathWorks}{Natick, MA (on-site)}
+\role{Software Engineer, Quantum Computing}{May 2022 - Present}
 
-\role{Software Engineer, Quantum Computing}{May 2023 - Present}
-
-{\begin{itemize}
-\item Lead development of the {{\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}}}, 10k+ users, available on Windows, Linux, and Mac
-
-\begin{itemize}[label=-]
+\begin{itemize}
+\item Lead development of the {\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}}, used by 10k+ customers across Windows, Linux, and Mac
+\begin{itemize}
 \item Designed core object-oriented MATLAB framework for modeling, simulating, and running quantum algorithms
-\item Developed templated C++ state-vector simulation kernels for CPU/GPU, delivering 30-100x speedup
-\item Integrated C++ compiler for place/route graph optimization and hardware-specific assembly code generation
-\item Built client-side MATLAB infrastructure on AWS/IBM REST APIs to enable 300k+ user-submitted quantum circuits
-\item Wrote numerical methods to estimate Pauli observables, synthesize quantum gates, and mitigate measurement errors
-\item Owned 50k+ line codebase from prototype to production, spanning CI/CD, test infrastructure, and roadmap planning
+\item Developed templated C++ state-vector simulation kernels for CPU/GPU, delivering 30--100x speedup
+\item Integrated C++ graph compiler for qubit allocation, routing, and hardware-specific assembly code generation
+\item Built REST API client infrastructure for AWS and IBM quantum backends, enabling remote execution of 300k+ quantum circuits natively from MATLAB
+\item Implemented numerical methods to estimate Pauli observables, synthesize quantum gates, and mitigate measurement errors
+\item Grew 50k+ line codebase from prototype to production, spanning CI/CD, test infrastructure, and roadmap planning
 \end{itemize}
-
-\item Consulted industry with quantum computing applications, with results presented at ACS, AWS re:Invent, and IBM QDC
-
-\begin{itemize}[label=-]
-\item Designed quantum neural networks for image classification ({{\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE publication}}}) and reinforcement learning
+\item Consulted industry customers on quantum applications, with results presented at ACS, AWS re:Invent, and IBM QDC
+\begin{itemize}
+\item Designed quantum neural networks for image classification ({\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE publication}}) and reinforcement learning
 \item Implemented constrained optimization methods using Pauli correlation encoding, quadratization, and penalty dephasing
 \end{itemize}
+\end{itemize}
 
-\end{itemize}}
+\role{Senior Associate Software Engineer}{May 2021 - May 2022}
 
-\vspace{0.2cm}
-
-\role{Senior Associate Software Engineer}{May 2022 - May 2023}
-
-{\begin{itemize}
+\begin{itemize}
 \item Trained temporal graph neural network on 1M+ molecular instances to predict equilibrium structures with XX\% accuracy
-\item Constructed penalty-encoded Hamiltonians for course-grained protein folding, yielding XX\% ground state accuracy on quantum annealing hardware
-\item Developed Hamiltonian simulations of superconducting qubits under transverse, longitudinal, and bidirectional coupling
-\end{itemize}}
-
-\role{Associate Software Engineer}{May 2021 - May 2022}
-{\begin{itemize}[label=-]
-\item Resolved 250+ bug reports across core MATLAB control systems and mathematics function libraries
-\end{itemize}}
-
-\vspace{-0.5cm}
+\item Evaluated penalty-encoded Hamiltonians for coarse-grained protein folding, yielding XX\% ground state accuracy on quantum annealing hardware
+\item Developed Hamiltonian simulations of superconducting qubits under transverse and longitudinal coupling fields
+\item Supported 100+ customers using core MATLAB products, including code design, debugging, and performance improvements
+\end{itemize}
 
 \section{Education}
 
 \company{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
-
 \role{M.S. Electrical and Computing Engineering}{Expected May 2027}
 
-{\begin{itemize}
-\item Fabricated mixed-signal PCB to solve combinatorial problems using phase dynamics of LC oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint})
-
-\begin{itemize}[label=-]
-\item Developed LTspice and MATLAB simulations to model bifurcation dynamics under noisy perturbations
-\item Designed schematics and layouts in Altium Designer for two multi-layer
-\item Developed real-time embedded C++ firmware using SPI and FreeRTOS for phase readout at 1MHz
-\item Automated test instruments with MATLAB to control perturbations and analyze Fourier spectrum
+\begin{itemize}
+\item Fabricated experimental mixed-signal PCB to solve combinatorial problems using coupled electronic oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint})
+\begin{itemize}
+\item Developed LTspice and MATLAB simulation models, designed layout schematics in Altium Designer, and automated test instruments with MATLAB
+\item Wrote embedded real-time C++ firmware using SPI and FreeRTOS to enable programmable coupling and phase measurement
 \end{itemize}
-\end{itemize}}
-
-\vspace{0.2cm}
+\end{itemize}
 
 \company{The University of New Hampshire (3.9 GPA)}{Durham, NH (on-site)}
-
 \role{B.S. Mechanical Engineering}{May 2021}
 
-{\begin{itemize}
-\item Awarded over \$100,000 in merit-based academic scholarships for developing an autonomous quadcopter
-\item Led the Quadcopter Engineering Team; Volunteered as Makerspace Administrator, Academic Tutor and Mentor
-\end{itemize}}
-
-\vspace{-0.5cm}
+\begin{itemize}
+\item Awarded \$100,000+ scholarships, led Quadcopter Engineering Team, and volunteered as Makerspace administrator
+\end{itemize}
 
 \section{Projects}
 
 \project{Home Server}{Present}
-{\begin{itemize}
-  \item Built custom Linux server with multi-GPU compute capability, and remote access configured with Tailscale
-\end{itemize}}
+\begin{itemize}
+\item Built custom Linux server with multi-GPU compute capability and remote access configured with Tailscale
+\end{itemize}
 
 \project{Machine Learning}{Present}
-{\begin{itemize}
-  \item Wrote GPU-accelerated Monte Carlo simulations to analyze annealing dynamics of Kuramoto oscillators
+\begin{itemize}
+\item Wrote GPU-accelerated Monte Carlo simulations of nonlinear oscillators to analyze annealing dynamics for combinatorial optimization problems
 \item Improved VLSI placement methods by 10$\%$ across ICCAD04 benchmarks using Bayesian optimization and custom legalization passes
-\end{itemize}}
-
-\vspace{-0.5cm}
+\end{itemize}
 
 \section{Skills}
 
-\textbf{Programming Languages:} MATLAB, C++, Python (PyTorch/CUDA, NetworkX, OpTuna, OpenCV)\\
-\textbf{Software:} CMake, OpenMP, Shell Scripting, LLVM/MLIR, GoogleTests, Docker, Git, Perforce, Microsoft Suite
+\textbf{Programming Languages:} MATLAB, C++, Python (PyTorch/CUDA, NetworkX)\\
+\textbf{Software:} CMake, OpenMP, Shell Scripting, LLVM/MLIR, GoogleTests, Docker, Git, Perforce, Jira, Microsoft Suite
 
 \end{document}
