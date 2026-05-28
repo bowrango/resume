@@ -74,23 +74,22 @@
 \item Designed core object-oriented MATLAB framework for modeling, simulating, and running quantum algorithms
 \item Developed templated C++ state-vector simulation kernels for CPU/GPU, delivering 30--100x speedup
 \item Integrated C++ graph compiler for qubit allocation, routing, and hardware-specific assembly code generation
-\item Built REST API client infrastructure for AWS and IBM quantum backends, enabling remote execution of 300k+ quantum circuits natively from MATLAB
+\item Built client-side REST interface for AWS and IBM quantum APIs, enabling remote hardware execution of quantum circuits natively in MATLAB
 \item Implemented numerical methods to estimate Pauli observables, synthesize quantum gates, and mitigate measurement errors
 \item Grew 50k+ line codebase from prototype to production, spanning CI/CD, test infrastructure, and roadmap planning
 \end{itemize}
-\item Consulted industry customers on quantum applications, with results presented at ACS, AWS re:Invent, and IBM QDC
+\item Consulted industry customers with quantum computing applications of interest, with results presented at {\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE}}, ACS, AWS, and IBM
 \begin{itemize}
-\item Designed quantum neural networks for image classification ({\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE publication}}) and reinforcement learning
-\item Implemented constrained optimization methods using Pauli correlation encoding, quadratization, and penalty dephasing
+\item Developed quantum-classical workflows for classification and optimization tasks, including methods such as data re-uploading, Pauli correlation encoding, and quadratization
 \end{itemize}
 \end{itemize}
 
 \role{Senior Associate Software Engineer}{May 2021 - May 2022}
 
 \begin{itemize}
-\item Trained temporal graph neural network on 1M+ molecular instances to predict equilibrium structures with XX\% accuracy
-\item Evaluated penalty-encoded Hamiltonians for coarse-grained protein folding, yielding XX\% ground state accuracy on quantum annealing hardware
-\item Developed Hamiltonian simulations of superconducting qubits under transverse and longitudinal coupling fields
+\item Trained temporal graph neural network on 1M+ molecular instances to predict energy of equilibrium structures
+\item Developed penalty-encoded Hamiltonians for coarse-grained protein folding, yielding 86\% ground state accuracy on quantum annealing hardware
+\item Implemented Hamiltonian simulations of superconducting qubits under transverse and longitudinal coupling fields
 \item Supported 100+ customers using core MATLAB products, including code design, debugging, and performance improvements
 \end{itemize}
 
@@ -100,10 +99,10 @@
 \role{M.S. Electrical and Computing Engineering}{Expected May 2027}
 
 \begin{itemize}
-\item Fabricated experimental mixed-signal PCB to solve combinatorial problems using coupled electronic oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv preprint})
+\item Fabricated experimental mixed-signal PCB to solve combinatorial optimization problems using coupled electronic oscillators (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv})
 \begin{itemize}
 \item Developed LTspice and MATLAB simulation models, designed layout schematics in Altium Designer, and automated test instruments with MATLAB
-\item Wrote embedded real-time C++ firmware using SPI and FreeRTOS to enable programmable coupling and phase measurement
+\item Wrote embedded real-time C++ firmware using SPI and FreeRTOS to enable reconfigurable coupling and phase measurement
 \end{itemize}
 \end{itemize}
 
@@ -124,12 +123,12 @@
 \project{Machine Learning}{Present}
 \begin{itemize}
 \item Wrote GPU-accelerated Monte Carlo simulations of nonlinear oscillators to analyze annealing dynamics for combinatorial optimization problems
-\item Improved VLSI placement methods by 10$\%$ across ICCAD04 benchmarks using Bayesian optimization and custom legalization passes
+\item Improved VLSI placement methods by 10$\%$ using Bayesian optimization and custom legalization passes
 \end{itemize}
 
 \section{Skills}
 
-\textbf{Programming Languages:} MATLAB, C++, Python (PyTorch/CUDA, NetworkX)\\
+\textbf{Programming Languages:} MATLAB, C++, Python (PyTorch/CUDA, NetworkX, Qiskit, PennyLane)\\
 \textbf{Software:} CMake, OpenMP, Shell Scripting, LLVM/MLIR, GoogleTests, Docker, Git, Perforce, Jira, Microsoft Suite
 
 \end{document}
