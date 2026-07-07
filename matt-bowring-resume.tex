@@ -72,15 +72,15 @@
 \item Lead development of the {\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}} (10k+ users, supports Windows, Linux, and Mac) %used by 10k+ customers across Windows, Linux, and Mac
 \begin{itemize}
 \item Designed object-oriented MATLAB framework for modeling, simulating, and executing parameterized quantum algorithms
-\item Developed multi-threaded C++ state-vector simulation kernels for CPU/GPU, delivering 30--100x speedup over MATLAB
-\item Integrated C++ graph compiler for qubit placement, routing, and hardware-specific assembly code generation with batch support
-\item Built client-side REST interface to AWS and IBM quantum services, handling authentication, job management, and remote access to quantum hardware
+\item Developed multi-threaded C++ state-vector simulation kernels for CPU/GPU, delivering 30--100x speedup over MATLAB implementation
+\item Integrated C++ graph compiler for qubit placement, routing, and hardware-specific assembly code generation with support for batched execution
+\item Built client-side REST interface to AWS and IBM quantum cloud services, enabling remote access to quantum hardware with authentication and job management
 \item Implemented numerical methods to estimate sparse Pauli observables, synthesize quantum logic gates, and mitigate measurement errors
 \item Managed 50k+ line codebase from prototype to production, including CI/CD, test infrastructure, and roadmap planning for monthly updates
 \end{itemize}
 \item Consulted industry with quantum computing applications, with results presented by {\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE}}, ACS, AWS, and IBM
 \begin{itemize}
-\item Developed quantum-classical workflows for classification and optimization tasks, including methods like QAOA/VQE, quantum Monte Carlo, Pauli correlation encoding, and error correction codes
+\item Developed quantum-classical workflows for classification and optimization, using methods such as QAOA/VQE, quantum Monte Carlo, Pauli correlation encoding, and error correction codes
 \end{itemize}
 \end{itemize}
 
@@ -91,7 +91,7 @@
 \begin{itemize}
   \item Trained temporal graph neural network on 1M+ molecular instances to predict energy of equilibrium structures
   \item Implemented Hamiltonian simulations of superconducting qubits under transverse and longitudinal coupling fields
-  \item Formulated penalty-encoded Hamiltonians for coarse-grained protein folding for quantum annealing hardware
+  \item Formulated sparse and dense Hamiltonians with penalty constraints for coarse-grained protein folding on tetrahedral lattice, and benchmarked performance on quantum annealing hardware
 \end{itemize}
 \item Supported 100+ customers using MATLAB products, including code design, debugging, and performance improvements
 \end{itemize}
@@ -104,7 +104,7 @@
 \begin{itemize}
 \item Fabricated mixed-signal PCB implementing reconfiguable network of 8 fully-coupled electronic oscillators, serving as an experimental solver for combinatorial graph problems (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv})
 \begin{itemize}
-\item Developed LTspice and MATLAB simulations, designed schematics and layouts in Altium, and automated test instruments with MATLAB
+\item Developed LTspice and MATLAB simulations, designed schematics and layouts in Altium Designer, and automated test instruments with MATLAB
 \item Developed embedded C++ SPI firmware with FreeRTOS to enable tunable coupling and real-time phase measurement
 \end{itemize}
 \end{itemize}
@@ -120,19 +120,19 @@
 
 \project{Home Server}{Present}
 \begin{itemize}
-\item Built custom Linux home server using Tailscale to enable remote access to personal multi-GPU system
+\item Built custom Linux home server with Tailscale to enable remote access to personal multi-GPU system
 \end{itemize}
 
 \project{Machine Learning}{Present}
 \begin{itemize}
-\item Wrote GPU-accelerated Monte Carlo simulations of nonlinear oscillators to research annealing dynamics for combinatorial problems
-\item Integrated Pixhawk flight controller with Raspberry Pi using Python to enable waypoint tracking for autonomous quadcopter navigation
+\item Wrote GPU-accelerated Monte Carlo simulations of nonlinear oscillators to research annealing dynamics
+\item Integrated Pixhawk flight controller with Raspberry Pi to enable waypoint tracking for autonomous quadcopter
 \item Trained CNN-RNN on driving footage to predict dash-camera frame misalignment with 86$\%$ accuracy
 \end{itemize}
 
 \section{Skills}
 
 \textbf{Programming Languages:} MATLAB, C++, Python (PyTorch/CUDA, NetworkX, Qiskit, PennyLane)\\
-\textbf{Software:} CMake, OpenMP, Shell Scripting, LLVM/MLIR, GoogleTests, Docker, Nix, Git
+\textbf{Software:} CMake, OpenMP, Shell Scripting, LLVM/MLIR, Git, GoogleTests, Docker, Nix
 
 \end{document}
