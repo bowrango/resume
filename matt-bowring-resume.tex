@@ -11,7 +11,7 @@
 
 % Single knob for vertical rhythm between entries. Tune this and every gap scales together.
 \newlength{\entrygap}
-\setlength{\entrygap}{-0.1cm}
+\setlength{\entrygap}{-0.05cm}
 
 \setlist[itemize,1]{
   label=$\bullet$,
@@ -27,6 +27,9 @@
   parsep=0pt,
   topsep=0pt,
 }
+
+\newcommand{\headergap}[0]{\vspace{-1cm}}
+\newcommand{\sectiongap}[0]{\vspace{-0.5cm}}
 
 % Header for a new employer / institution / project block. Adds a small gap above
 % so it visually separates from the preceding itemize, role, or section header.
@@ -63,6 +66,8 @@
     \href{https://www.linkedin.com/in/matt-bowring-463610149/}{\color{blue} LinkedIn}
 \end{center}
 
+\headergap
+
 \section{Experience}
 
 \company{MathWorks}{Natick, MA (on-site)}
@@ -74,7 +79,7 @@
 \item Designed object-oriented MATLAB framework for modeling, simulating, and executing parameterized quantum algorithms
 \item Developed multi-threaded C++ state-vector simulation kernels for CPU/GPU, delivering 30--100x speedup over MATLAB implementation
 \item Integrated C++ graph compiler for qubit placement, routing, and hardware-specific assembly code generation with support for batched execution
-\item Built client-side REST interface to AWS and IBM quantum cloud services, enabling remote access to quantum hardware with authentication and job management
+\item Built client-side REST interface to AWS and IBM quantum cloud services with authentication and job management, enabling remote access to quantum hardware
 \item Implemented numerical methods to estimate sparse Pauli observables, synthesize quantum logic gates, and mitigate measurement errors
 \item Managed 50k+ line codebase from prototype to production, including CI/CD, test infrastructure, and roadmap planning for monthly updates
 \end{itemize}
@@ -96,6 +101,8 @@
 \item Supported 100+ customers using MATLAB products, including code design, debugging, and performance improvements
 \end{itemize}
 
+\sectiongap
+
 \section{Education}
 
 \company{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
@@ -116,6 +123,8 @@
 \item Awarded \$100,000+ scholarships, led Quadcopter Engineering Team, and volunteered as Makerspace administrator
 \end{itemize}
 
+\sectiongap
+
 \section{Projects}
 
 \project{Home Server}{Present}
@@ -126,9 +135,11 @@
 \project{Machine Learning}{Present}
 \begin{itemize}
 \item Wrote GPU-accelerated Monte Carlo simulations of nonlinear oscillators to research annealing dynamics
-\item Integrated Pixhawk flight controller with Raspberry Pi to enable waypoint tracking for autonomous quadcopter
-\item Trained CNN-RNN on driving footage to predict dash-camera frame misalignment with 86$\%$ accuracy
+\item Integrated flight controller with Raspberry Pi to enable waypoint tracking for autonomous quadcopter, validated with software-in-the-loop simulations in Gazebo physics environment
+\item Trained CNN-RNN on dash-camera driving footage to predict frame misalignment with 86$\%$ accuracy
 \end{itemize}
+
+\sectiongap
 
 \section{Skills}
 
