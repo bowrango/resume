@@ -74,16 +74,16 @@
 \role{Software Engineer, Quantum Computing}{May 2022 - Present}
 
 \begin{itemize}
-\item Lead development of the {\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}} (10k+ users, supports Windows, Linux, and Mac) %used by 10k+ customers across Windows, Linux, and Mac
+\item Lead development of the {\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}} (10k+ users, Windows/Linux/macOS support) %used by 10k+ customers across Windows, Linux, and Mac
 \begin{itemize}
-\item Designed object-oriented MATLAB framework for modeling, simulating, and executing parameterized quantum algorithms
-\item Developed multi-threaded C++ state-vector simulation kernels for CPU/GPU, delivering 30--100x speedup over MATLAB implementation
-\item Integrated C++ graph compiler for qubit placement, routing, and hardware-specific assembly code generation with support for batched execution
-\item Built client-side REST interface to AWS and IBM quantum cloud services with authentication and job management, enabling remote access to quantum hardware
+\item Designed core object-oriented MATLAB framework for building, simulating, and executing parameterized quantum circuits
+\item Developed templated C++ kernels for multi-threaded state-vector simulation on CPU/GPU, delivering 30--100x speedup over baseline MATLAB implementation
+\item Integrated C++ graph compiler for qubit placement, routing, and hardware-specific assembly code generation with batched execution support
+\item Built client-side REST interface to AWS and IBM quantum cloud services with authentication and job management, enabling execution on remote quantum hardware directly from MATLAB
 \item Implemented numerical methods to estimate sparse Pauli observables, synthesize quantum logic gates, and mitigate measurement errors
-\item Managed 50k+ line codebase from prototype to production, including CI/CD, test infrastructure, and roadmap planning for monthly updates
+\item Managed 50k+ line codebase from prototype to production, including CI/CD, test infrastructure, and roadmap planning for monthly releases
 \end{itemize}
-\item Consulted industry with quantum computing applications, with results presented by {\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE}}, ACS, AWS, and IBM
+\item Collaborated with industry partners on quantum computing applications, with results presented at {\color{blue}\href{https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13451/1345105/Optimizing-supervised-quantum-machine-learning-for-pixel-classification/10.1117/12.3052526.short}{SPIE}}, ACS, AWS, and IBM
 \begin{itemize}
 \item Developed quantum-classical workflows for classification and optimization, using methods such as QAOA/VQE, quantum Monte Carlo, Pauli correlation encoding, and error correction codes
 \end{itemize}
@@ -92,11 +92,11 @@
 \role{Senior Associate Software Engineer}{May 2021 - May 2022}
 
 \begin{itemize}
-\item Ran quantum computing and deep learning experiments for customer applications
+\item Implemented machine learning and quantum computing experiments for customer research applications
 \begin{itemize}
   \item Trained temporal graph neural network on 1M+ molecular instances to predict energy of equilibrium structures
   \item Implemented Hamiltonian simulations of superconducting qubits under transverse and longitudinal coupling fields
-  \item Formulated sparse and dense Hamiltonians with penalty constraints for coarse-grained protein folding on tetrahedral lattice, and benchmarked performance on quantum annealing hardware
+  \item Formulated Hamiltonians with penalty constraints for coarse-grained protein folding, and benchmarked performance on quantum annealing hardware
 \end{itemize}
 \item Supported 100+ customers using MATLAB products, including code design, debugging, and performance improvements
 \end{itemize}
@@ -109,9 +109,9 @@
 \role{M.S. Electrical and Computing Engineering}{Expected May 2027}
 
 \begin{itemize}
-\item Fabricated mixed-signal PCB implementing reconfiguable network of 8 fully-coupled electronic oscillators, serving as an experimental solver for combinatorial graph problems (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv})
+\item Designed and fabricated a mixed-signal oscillator computing platform for combinatorial optimization research (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv})
 \begin{itemize}
-\item Developed LTspice and MATLAB simulations, designed schematics and layouts in Altium Designer, and automated test instruments with MATLAB
+\item Developed circuit simulations in LTspice and MATLAB, designed schematics and layouts with Altium Designer, and verified hardware components with oscilloscope and waveform generator
 \item Developed embedded C++ SPI firmware with FreeRTOS to enable tunable coupling and real-time phase measurement
 \end{itemize}
 \end{itemize}
@@ -127,11 +127,6 @@
 
 \section{Projects}
 
-\project{Home Server}{Present}
-\begin{itemize}
-\item Built custom Linux home server with Tailscale to enable remote access to personal multi-GPU system
-\end{itemize}
-
 \project{Machine Learning}{Present}
 \begin{itemize}
 \item Wrote GPU-accelerated Monte Carlo simulations of nonlinear oscillators to research annealing dynamics
@@ -143,7 +138,8 @@
 
 \section{Skills}
 
-\textbf{Programming Languages:} MATLAB, C++, Python (PyTorch/CUDA, NetworkX, Qiskit, PennyLane)\\
-\textbf{Software:} CMake, OpenMP, Shell Scripting, LLVM/MLIR, Git, GoogleTests, Docker, Nix
+\textbf{Languages:} MATLAB, C++, Python\\
+\textbf{Libraries} PyTorch, Pennylane, Qiskit, NetworkX, CUDA\\
+\textbf{Tools:} CMake, OpenMP, LLVM/MLIR, Git, GoogleTests, Docker, Nix
 
 \end{document}
