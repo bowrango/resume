@@ -74,18 +74,18 @@
 \role{Software Engineer, Quantum Computing}{May 2022 - Present}
 
 \begin{itemize}
-\item Lead development of the {\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}} (10k+ users, Windows/Linux/macOS support) %used by 10k+ customers across Windows, Linux, and Mac
+\item Lead development of the {\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}} (11k+ users, Windows/Linux/macOS support) %used by 10k+ customers across Windows, Linux, and Mac
 \begin{itemize}
 \item Designed core object-oriented MATLAB framework for building, simulating, and executing parameterized quantum circuits
-\item Developed templated C++ kernels for multi-threaded state-vector simulation on CPU/GPU, delivering 30--100x speedup over the baseline MATLAB implementation
+\item Developed templated C++ kernels for multi-threaded circuit simulation on CPU/GPU, delivering 30--100x speedup over the baseline MATLAB implementation
 \item Integrated C++ graph compiler for qubit placement, routing, and hardware-specific assembly code generation with batched execution support
-\item Built client-side REST interfaces to AWS and IBM quantum cloud services for authentication, job management, and remote hardware execution directly from MATLAB
+\item Built client-side REST interfaces to AWS and IBM quantum cloud services with authentication and job management to enable quantum hardware access directly from MATLAB
 \item Implemented numerical methods to estimate sparse Pauli observables, synthesize quantum logic gates, and mitigate measurement errors
 \item Owned 50k+ line codebase from prototype to production, including CI/CD, test infrastructure, and roadmap planning for monthly releases
 \end{itemize}
-\item Collaborated with industry partners on quantum computing applications, with results presented at SPIE, ACS, AWS, and IBM conferences
+\item Collaborated with industry partners on quantum computing applications, with results presented at SPIE, ACS, and AIChE conferences
 \begin{itemize}
-\item Developed quantum-classical workflows for classification and optimization, using methods such as QAOA/VQE, quantum Monte Carlo, Pauli correlation encoding, and error correction codes
+\item Developed quantum-classical maching learning workflows using methods such as QAOA/VQE, quantum Monte Carlo, Pauli correlation encoding, and error correction codes
 \end{itemize}
 \end{itemize}
 
@@ -105,19 +105,23 @@
 
 \section{Education}
 
-\company{Purdue University (3.8 GPA)}{West Lafayette, IN (remote)}
-\role{M.S. Electrical and Computing Engineering}{Expected May 2027}
+\company{Purdue University}{West Lafayette, IN (remote)}
+\role{M.S. Electrical and Computing Engineering  (3.8 GPA)}{Expected May 2027}
 
 \begin{itemize}
 \item Designed and fabricated a mixed-signal oscillator computing platform for combinatorial optimization research (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv})
 \begin{itemize}
-\item Developed circuit simulations in LTspice and MATLAB, designed schematics and PCB layouts with Altium Designer, and characterized hardware components with oscilloscope and waveform generator
+\item Developed circuit simulations in LTspice and MATLAB, designed schematics and PCB layouts with Altium Designer, and verified hardware components with oscilloscope and waveform generator
 \item Developed embedded C++ firmware using SPI and FreeRTOS to enable programmable oscillator coupling and real-time phase measurement
 \end{itemize}
 \end{itemize}
 
-\company{The University of New Hampshire (3.9 GPA)}{Durham, NH (on-site)}
-\role{B.S. Mechanical Engineering}{May 2021}
+\begin{itemize}
+\item Extended geometric landscape annealing to coupled oscillators, relating nonlinear control and nonequilibrium thermodynamics to formulate principled schedules for combinatorial optimization
+\end{itemize}
+
+\company{The University of New Hampshire}{Durham, NH (on-site)}
+\role{B.S. Mechanical Engineering (3.9 GPA)}{May 2021}
 
 \begin{itemize}
 \item Awarded \$100,000+ scholarships, led Quadcopter Engineering Team, and volunteered as Makerspace administrator
@@ -128,9 +132,8 @@
 \section{Projects}
 
 \begin{itemize}
-\item Developed GPU-accelerated simulations of nonlinear dynamics to research annealing and edge-of-chaos behavior
-\item Optimized C++ matrix multiplication kernels using cache tiling, Arm Neon SIMD, and register blocking 
-\item Implemented Python networking protocols over UDP sockets, including selective retransmission and DNS resolution
+\item Implemented optimized matrix multiplication kernels in C using ARM NEON intrinsics, cache tiling, and register blocking
+\item Developed Python networking protocols over UDP sockets, including selective retransmission and DNS resolution
 \item Integrated Raspberry Pi with flight controller for autonomous waypoint tracking, validated with Gazebo software-in-the-loop simulation
 \item Trained recurrent convolutional neural network on dash-camera driving footage to predict frame misalignment with 86$\%$ accuracy
 \end{itemize}
@@ -139,7 +142,7 @@
 
 \section{Skills}
 
-\textbf{Languages:} MATLAB, C++, Python, Shell Scripting\\
+\textbf{Languages:} MATLAB, C/C++, Python, Shell Scripting\\
 \textbf{Libraries:} PyTorch, PennyLane, Qiskit, NetworkX\\
 \textbf{Tools:} CMake, OpenMP, LLVM/MLIR, CUDA, Git, GoogleTest, Docker, Nix
 
