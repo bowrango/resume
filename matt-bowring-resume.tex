@@ -77,7 +77,7 @@
 \item Lead development of the {\color{blue}\href{https://www.mathworks.com/help/matlab/quantum-computing.html?s_tid=CRUX_lftnav}{MATLAB Quantum Computing Library}} (11k+ users, Windows/Linux/macOS support) %used by 10k+ customers across Windows, Linux, and Mac
 \begin{itemize}
 \item Designed core object-oriented MATLAB framework for building, simulating, and executing parameterized quantum circuits
-\item Developed templated C++ kernels for multi-threaded circuit simulation on CPU/GPU, delivering 30--100x speedup over the baseline MATLAB implementation
+\item Developed templated C++ kernels for multi-threaded state-vector simulation on CPU/GPU, delivering 30x speedup over MATLAB implementation
 \item Integrated C++ graph compiler for qubit placement, routing, and hardware-specific assembly code generation with batched execution support
 \item Built client-side REST interfaces to AWS and IBM quantum cloud services with authentication and job management to enable quantum hardware access directly from MATLAB
 \item Implemented numerical methods to estimate sparse Pauli observables, synthesize quantum logic gates, and mitigate measurement errors
@@ -106,18 +106,18 @@
 \section{Education}
 
 \company{Purdue University}{West Lafayette, IN (remote)}
-\role{M.S. Electrical and Computing Engineering  (3.8 GPA)}{Expected May 2027}
+\role{M.S. Electrical and Computer Engineering  (3.8 GPA)}{Expected May 2027}
 
 \begin{itemize}
-\item Designed and fabricated a mixed-signal oscillator computing platform for combinatorial optimization research (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv})
+\item Designed and fabricated a mixed-signal oscillator-based Ising machine for combinatorial optimization research (\href{https://arxiv.org/abs/2512.23720}{\color{blue} arXiv})
 \begin{itemize}
 \item Developed circuit simulations in LTspice and MATLAB, designed schematics and PCB layouts with Altium Designer, and verified hardware components with oscilloscope and waveform generator
-\item Developed embedded C++ firmware using SPI and FreeRTOS to enable programmable oscillator coupling and real-time phase measurement
+\item Developed embedded C++ firmware using SPI and FreeRTOS to enable programmable oscillator couplings and real-time phase measurement
 \end{itemize}
 \end{itemize}
 
 \begin{itemize}
-\item Extended geometric landscape annealing to coupled oscillators, relating nonlinear control and nonequilibrium thermodynamics to formulate principled schedules for combinatorial optimization
+\item Applied random matrix theory and nonequilibrium thermodynamics to analyze annealing schedules for oscillator-based Ising machines
 \end{itemize}
 
 \company{The University of New Hampshire}{Durham, NH (on-site)}
@@ -132,8 +132,8 @@
 \section{Projects}
 
 \begin{itemize}
-\item Implemented optimized matrix multiplication kernels in C using ARM NEON intrinsics, cache tiling, and register blocking
-\item Developed Python networking protocols over UDP sockets, including selective retransmission and DNS resolution
+\item Optimized matrix multiplication kernels in C using ARM NEON intrinsics, cache tiling, and register blocking
+\item Developed socket-based networking protocols in Python with selective retransmission and DNS resolution
 \item Integrated Raspberry Pi with flight controller for autonomous waypoint tracking, validated with Gazebo software-in-the-loop simulation
 \item Trained recurrent convolutional neural network on dash-camera driving footage to predict frame misalignment with 86$\%$ accuracy
 \end{itemize}
